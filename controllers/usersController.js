@@ -13,8 +13,7 @@ const insertUser = (data, password) => {
 // Search for user
 const findOneUser = (data) => {
         return User.countDocuments(
-            { $or: [{ username: data.username }, { email: data.email }] }
-            )
+            { $or: [{ username: data.username }, { email: data.email }] })
             .then();
         
 }
